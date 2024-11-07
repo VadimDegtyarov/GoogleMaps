@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="">
+<head>
+    <title>Гугл карта!</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <meta http-equiv="Content-Type" content="resources/static; charset=UTF-8"/>
+    <style rel="css.css"></style>
+</head>
+<body>
+<p th:text="|This ${name}|"/>
+<gmp-map
+        center="53.893009,27.567444"
+        zoom="10"
+        map-id="DEMO_MAP_ID"
+        style="height: 95vh"
+
+></gmp-map>
+
+
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=beta"
+        defer
+></script>
+
+</body>
+</html>
